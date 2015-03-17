@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>jQuery.easydrag</title>
+    </head>
+    <body>
+        <h3>Drag the dialog.</h3>
+        <div style="width: 200px; height: 100px;">
+            <div id="dialog1" style="width: 100%; height: 100%; background: yellow;">
+                <div id="title1" style="height: 40%; background: blue;">
+                    Title
+                </div>
+                Content
+            </div>
+        </div>
+        <hr>
+        <h3>Drag the blue title.</h3>
+        <div style="width: 200px; height: 100px;">
+            <div id="dialog2" style="width: 100%; height: 100%; background: yellow;">
+                <div id="title2" style="height: 40%; background: blue;">
+                    Title
+                </div>
+                Content
+            </div>
+        </div>
+
+    </body>
+
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="jquery.easydrag.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Drag by dialog
+        $('#dialog1').easydrag();
+
+        // Drag by title
+        $('#title2').easydrag({
+            dialog: $('#dialog2')
+        });
+    });
+    </script>
+</html>
