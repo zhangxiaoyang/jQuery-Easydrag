@@ -12,15 +12,11 @@ Callee
 ===
 
 ```
-    <div style="width: 200px; height: 100px;">
-        <div id="dialog" style="width: 100%; height: 100%; background: yellow;">
-            Content
-        </div>
+    <div id="dialog" style="width: 200px; height: 100px; background: yellow;">
     </div>
 
     <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
     <script src="jquery.easydrag.js"></script>
-
     <script>
     $(document).ready(function() {
         $('#dialog').easydrag();
